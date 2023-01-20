@@ -81,13 +81,10 @@ form button:hover{
 .todo{
     margin: 0.5rem;
     border-radius: 10px;
-    background: linear-gradient(315deg, #fbeadc, #d4c5b9);
-    box-shadow:  -7px -7px 14px #d6c7bb,
-                7px 7px 14px #ffefe1;
-    /*background: var(--bg-color);
+    background: var(--bg-color);
     box-shadow: -8px -8px 16px rgba(255, 255, 255, 0.635), 8px 8px 16px rgba(222, 206, 192, 0.412);
     border-radius: 10px;
-    color: #140808;*/
+    color: #140808;
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
