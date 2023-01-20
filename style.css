@@ -9,7 +9,7 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        background: linear-gradient(120deg, lightyellow 30%, white , lightpink 60%);
+        background: linear-gradient(120deg, lightyellow 30%, white );
     }
     header{
         padding: 2rem 1rem;
@@ -52,7 +52,7 @@
         font-weight: 700;
         cursor: pointer;
         transition: 0.4s;
-        border: 1px solid blaack;
+        border: 1px solid black;
         border-radius: 1rem;
         padding: 1rem;
     }
@@ -81,13 +81,14 @@
     
     .task-list{
         padding: 1rem;
+        border-radius: 1rem;
     }
     
     #tasks .task{
         display: flex;
         justify-content: space-between;
         background-color: rgb(2, 2, 2);
-        border: 1px solid black;
+       
         padding: 1rem;
         border-radius: 1rem;
         margin-bottom: 1rem;
@@ -129,17 +130,17 @@
         opacity: 0.6;
     }
     .task .actions .Edit{
-        color: rgb(251, 251, 251);
+        color: rgb(53, 249, 9);
         background-color: rgb(7, 7, 7);
         box-shadow:  2px 2px 2px white;
     }
     .task .actions .Delete{
-        color: rgb(253, 251, 252);
+        color: rgb(251, 3, 3);
         background-color: black;
         box-shadow:  2px 2px 2px white;
     }
     .task .actions .Completed{
-        color: rgb(255, 255, 255);
+        color: rgb(4, 247, 211);
         background-color: black;
         box-shadow:  2px 2px 2px white;
     }
