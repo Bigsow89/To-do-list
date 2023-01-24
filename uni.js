@@ -5,7 +5,7 @@ function addTo(e) {
   if (inputValue) {
     document.getElementById(
       "task"
-    ).innerHTML += `<div class ="tasks"> <span id="task-names">${inputValue}</span><button class="edit"><i class="fas fa-check"></i></button><button class="delete"><i class="far fa-trash-alt"></i></button></div>`;
+    ).innerHTML += `<div class ="tasks"> <span id="task-names">${inputValue}</span><button class="check"><i class="fas fa-check"></i></button><button class="prompt"><i class="fas fa-comment"></i></button><button class="delete"><i class="far fa-trash-alt"></i></button></div>`;
     inputField.value = ""
   } else {
     alert("Error");
@@ -16,9 +16,19 @@ function addTo(e) {
       this.parentNode.remove();
     };
   }
-  let edit_tasks = document.querySelectorAll('.edit');
-  for (let index = 0; index < edit_tasks.length; index++) {
-    edit_tasks[index].onclick = function () {
+  let edit_tasks  = document.querySelectorAll('.prompt')
+  for(let i = 0; i < edit_tasks.length; i++) {
+    edit_tasks[i].onclick = function () {
+      let taskToEdit = document.querySelectorAll('#task-names')[i];
+      let promptValue = prompt("Enter a new value for this task:");
+      if (promptValue) {
+        taskToEdit.textContent = promptValue;
+        }
+    }
+  }
+  let check_tasks = document.querySelectorAll('.check');
+  for (let index = 0; index < check_tasks.length; index++) {
+    check_tasks[index].onclick = function () {
       document.querySelectorAll('#task-names')[index].classList.toggle('line');
     
       } 
